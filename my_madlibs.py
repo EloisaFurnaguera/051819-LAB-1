@@ -19,7 +19,7 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return render_template("homepage.html")
 
 
 @app.route('/hello')
