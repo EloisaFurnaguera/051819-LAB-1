@@ -50,14 +50,18 @@ def show_madlib_form():
     if answer == "no":
         return render_template("goodbye.html")
     else:
-        return render_template("madlib.html")
+        return render_template("game.html")
 
     
 
+@app.route('/madlib')
+def show_madlib():
+    
+    return render_template("madlib.html")
+
+    
 
                            
-
-
 
 
 if __name__ == '__main__':
